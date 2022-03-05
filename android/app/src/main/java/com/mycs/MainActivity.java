@@ -2,6 +2,13 @@ package com.mycs;
 
 import com.facebook.react.ReactActivity;
 
+/**
+* Imports below are added
+* @by Charles Kasasira
+ */
+
+import android.os.Bundle;
+
 public class MainActivity extends ReactActivity {
 
   /**
@@ -11,5 +18,17 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "MyCS";
+  }
+
+  /**
+  * Configuration added by
+  * charles
+  * @date 2022-02-24
+  * @time 11:25:00
+   */
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
   }
 }

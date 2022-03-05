@@ -17,7 +17,9 @@ const BottomNavigator = () => {
         }}
       >
           <Tab.Screen name='Home' component={HomeScreen} 
-            options={{tabBarIcon: () => 
+            options={{
+                headerShown: false,
+                tabBarIcon: () => 
                 <View style={{justifyContent: 'center', alignItems: 'center'}}>
                     <Icon name='home' size={23} color='#000' />
                     <Text style={{color: '#000', fontWeight: 'bold'}}>Home</Text>

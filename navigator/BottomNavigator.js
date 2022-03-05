@@ -26,14 +26,18 @@ const BottomNavigator = () => {
                 </View>}}
           />
           <Tab.Screen name='Events' component={EventScreen} 
-            options={{tabBarIcon: () => 
+            options={{
+                headerShown: false,
+                tabBarIcon: () => 
                 <View style={{justifyContent: 'center', alignItems: 'center'}}>
                     <Icon name='calendar' size={23} color='#000' />
                     <Text style={{color: '#000', fontWeight: 'bold'}}>Events</Text>
                 </View>}}
           />
           <Tab.Screen name='Forum' component={ForumScreen} 
-            options={{tabBarIcon: () => 
+            options={{
+                headerShown: false,
+                tabBarIcon: () => 
                 <View style={{justifyContent: 'center', alignItems: 'center'}}>
                     <Icon name='message-square' size={23} color='#000' />
                     <Text style={{color: '#000', fontWeight: 'bold'}}>Forum</Text>

@@ -3,12 +3,17 @@ import React from 'react'
 import Icon from 'react-native-vector-icons/Feather'
 
 const ProfileScreen = ({navigation}) => {
-  navigation.setOptions({
-    headerStyle: {
-      backgroundColor: 'black'
-    },
-    headerTitle: () => <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold'}}>Profile</Text>
-  })
+  // navigation.setOptions({
+  //   headerStyle: {
+  //     backgroundColor: 'black'
+  //   },
+  //   headerTitle: () => <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold'}}>Profile</Text>,
+  //   headerLeft: () => <><Icon name='arrow-left' color='#fff' /></>,
+  //   headerRight: () => <Icon name='arrow-left' color='#fff' />,
+  //   headerTintStyle: {
+  //     color: '#fff'
+  //   }
+  // })
 
   return (
     <View>

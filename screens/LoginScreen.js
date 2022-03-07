@@ -1,19 +1,34 @@
-import { View, Text, Button } from 'react-native'
+import { View, Text, Button, TextInput } from 'react-native'
 import React from 'react'
-import Icon from 'react-native-vector-icons/Feather'
+import { GLOBAL_STYLES } from '../assets/styles/styles'
 
 const LoginScreen = ({navigation}) => {
   return (
-    <View>
-      <Text style={{fontFamily: 'Roboto-Bold'}}>LoginScreen</Text>
-      <Icon name='home' size={25} color='black' />
-      <Button 
-        title='Login'
-        color='#000'
-        onPress={() => navigation.navigate('Tabs')}
-      >
-      </Button>
-    </View>
+      <View style={GLOBAL_STYLES.loginContainer}>
+          <View style={{alignItems: 'center', marginBottom: 30}}>
+            <Text>Login</Text>
+          </View>
+          <View>
+            <Text>Email</Text>
+            <TextInput 
+              style={GLOBAL_STYLES.inputField}
+            />
+          </View>
+
+          <View>
+            <Text>Password</Text>
+            <TextInput
+              style={GLOBAL_STYLES.inputField}
+            />
+          </View>
+          
+          <Button 
+            title='Login'
+            color='#000'
+            onPress={() => navigation.navigate('Tabs')}
+          >
+          </Button>
+      </View>
   )
 }
 

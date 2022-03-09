@@ -1,13 +1,14 @@
 import { View, Text, SafeAreaView, Image, ScrollView, TouchableOpacity, FlatList } from 'react-native'
 import React from 'react'
 import { linear } from 'react-native/Libraries/Animated/Easing'
+import { GLOBAL_STYLES } from '../assets/styles/styles'
 
 const HomeScreen = ({ navigation }) => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
         <View
             style={{
-                backgroundColor: '#000',
+                backgroundColor: '#222',
             }}
         >
             <View style={{flexDirection: 'row', paddingHorizontal: 20, marginVertical: 30, justifyContent: 'space-between'}}>
@@ -59,11 +60,12 @@ const HomeScreen = ({ navigation }) => {
                     overflow: 'hidden'
                 }}
             >
-                <View style={{flex: 0.7, backgroundColor: 'linear(rgba(0,0,0,1), rgba(255,255,255,1))', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 10}}>
+                <View style={{flex: 0.7, backgroundColor: '#222', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 10}}>
                     <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 18}}>Digital Innovation and Computational Thinking</Text>
                 </View>
-                <View style={{flex: 0.3}}>
-                    <Text>Nothing yet</Text>
+                <View style={{flex: 0.3, padding: 10}}>
+                    <Text style={{color: '#000', fontWeight: 'bold'}}>Business Canvas</Text>
+                    <Text>10/03/2022 11:59pm</Text>
                 </View>
             </View>
             <View
@@ -80,8 +82,9 @@ const HomeScreen = ({ navigation }) => {
                 <View style={{flex: 0.7, backgroundColor: 'pink', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 10}}>
                     <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 18}}>Computer Literacy</Text>
                 </View>
-                <View style={{flex: 0.3}}>
-                    <Text>Nothing yet</Text>
+                <View style={{flex: 0.3, padding: 10}}>
+                    <Text style={{color: '#000', fontWeight: 'bold'}}>Excel</Text>
+                    <Text>10/03/2022 11:59pm</Text>
                 </View>
             </View>
             <View
@@ -98,8 +101,9 @@ const HomeScreen = ({ navigation }) => {
                 <View style={{flex: 0.7, backgroundColor: 'crimson', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 10}}>
                 <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 18}}>Computer Organization and Architecture</Text>
                 </View>
-                <View style={{flex: 0.3}}>
-                    <Text>Nothing yet</Text>
+                <View style={{flex: 0.3, padding: 10}}>
+                    <Text style={{color: '#000', fontWeight: 'bold'}}>Test 01</Text>
+                    <Text>10/03/2022 11:59pm</Text>
                 </View>
             </View>
 
@@ -114,11 +118,12 @@ const HomeScreen = ({ navigation }) => {
                     overflow: 'hidden'
                 }}
             >
-                <View style={{flex: 0.7, backgroundColor: 'grey', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 10}}>
+                <View style={{flex: 0.7, backgroundColor: '#ececea', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 10}}>
                 <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 18}}>Structured and Object Oriented Programming</Text>
                 </View>
-                <View style={{flex: 0.3}}>
-                    <Text>Nothing yet</Text>
+                <View style={{flex: 0.3, padding: 10}}>
+                    <Text style={{color: '#000', fontWeight: 'bold'}}>Test 02</Text>
+                    <Text>10/03/2022 11:59pm</Text>
                 </View>
             </View>
 
@@ -137,8 +142,9 @@ const HomeScreen = ({ navigation }) => {
                 <View style={{flex: 0.7, backgroundColor: 'dodgerblue', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 10}}>
                 <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 18}}>Communication Skills</Text>
                 </View>
-                <View style={{flex: 0.3}}>
-                    <Text>Nothing yet</Text>
+                <View style={{flex: 0.3, padding: 10}}>
+                    <Text style={{color: '#000', fontWeight: 'bold'}}>Business Canvas</Text>
+                    <Text>10/03/2022 11:59pm</Text>
                 </View>
             </View>
         </ScrollView>
@@ -157,7 +163,7 @@ const HomeScreen = ({ navigation }) => {
 
         <View style={{backgroundColor: '#fff', marginTop: 20}}>
             <View style={{ flexDirection: 'row', paddingVertical: 10, paddingLeft: 10}}>
-                <View style={{backgroundColor: 'grey', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
+                <View style={{backgroundColor: '#ececea', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>CSC</Text>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>1109</Text>
                 </View>
@@ -167,7 +173,7 @@ const HomeScreen = ({ navigation }) => {
                 </View>
             </View>
             <View style={{marginTop: 20, flexDirection: 'row', paddingVertical: 10, paddingLeft: 10}}>
-                <View style={{backgroundColor: 'grey', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
+                <View style={{backgroundColor: '#ececea', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>CSC</Text>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>1100</Text>
                 </View>
@@ -177,7 +183,7 @@ const HomeScreen = ({ navigation }) => {
                 </View>
             </View>
             <View style={{marginTop: 20, flexDirection: 'row', paddingVertical: 10, paddingLeft: 10}}>
-                <View style={{backgroundColor: 'grey', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
+                <View style={{backgroundColor: '#ececea', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>CSC</Text>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>1104</Text>
                 </View>
@@ -187,7 +193,7 @@ const HomeScreen = ({ navigation }) => {
                 </View>
             </View>
             <View style={{marginTop: 20, flexDirection: 'row', paddingVertical: 10, paddingLeft: 10}}>
-                <View style={{backgroundColor: 'grey', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
+                <View style={{backgroundColor: '#ececea', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>CSC</Text>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>1102</Text>
                 </View>
@@ -197,7 +203,7 @@ const HomeScreen = ({ navigation }) => {
                 </View>
             </View>
             <View style={{marginTop: 20, flexDirection: 'row', paddingVertical: 10, paddingLeft: 10}}>
-                <View style={{backgroundColor: 'grey', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
+                <View style={{backgroundColor: '#e3e3e1', height: 55, width: 55, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>CSK</Text>
                     <Text style={{color: '#fff', fontWeight: 'bold'}}>1100</Text>
                 </View>

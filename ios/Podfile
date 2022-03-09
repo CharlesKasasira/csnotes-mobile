@@ -12,6 +12,8 @@ target 'MyCS' do
     :hermes_enabled => false
   )
 
+  pod 'RNScreens', :path => '../node_modules/react-native-screens'
+
   target 'MyCSTests' do
     inherit! :complete
     # Pods for testing

@@ -1,6 +1,7 @@
 import { View, Text, Button, TextInput } from 'react-native'
 import React from 'react'
 import { GLOBAL_STYLES } from '../assets/styles/styles'
+import { Btn } from '../components'
 
 const LoginScreen = ({navigation}) => {
   return (
@@ -21,13 +22,11 @@ const LoginScreen = ({navigation}) => {
               style={GLOBAL_STYLES.inputField}
             />
           </View>
-          
-          <Button 
-            title='Login'
-            color='#000'
-            onPress={() => navigation.navigate('Tabs')}
-          >
-          </Button>
+
+          <Btn
+            text={'LOGIN'}
+            pressed={() => navigation.navigate('Tabs')}
+          />
       </View>
   )
 }

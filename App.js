@@ -14,7 +14,7 @@ import StackNavigator from './navigator/Navigator';
 const App = () => {
   return (
     <NavigationContainer>
-      <StatusBar backgroundColor='black' />
+      <StatusBar backgroundColor='#222222' />
       <StackNavigator />
     </NavigationContainer>
   )

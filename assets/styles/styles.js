@@ -5,9 +5,7 @@ const GLOBAL_STYLES = StyleSheet.create({
     loginContainer: {
         flex: 1,
         justifyContent: 'center',
-        // alignItems: 'center',
-        padding: 10,
-        borderWidth: 5
+        padding: 10
     },
     inputField: {
         borderWidth: 1,
@@ -26,7 +24,8 @@ const GLOBAL_STYLES = StyleSheet.create({
     btnText: {
         color: '#fff',
         fontWeight: 'bold',
-        fontSize: 18
+        fontSize: 18,
+        fontFamily: 'Roboto-Bold'
     }
 })
 
